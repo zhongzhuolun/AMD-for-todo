@@ -282,9 +282,7 @@ define(['zarek', 'tools', 'handleArray', 'init', 'control'], function($, tools, 
 		$activeBtn.on('click', function() {
 			// 7.1 找到所有为true的items
 			var $allComplete = handleArray.getAllTrueItems(conditionArray);
-			console.log($allComplete);
 			var $allNoComplete = handleArray.getAllFalse(conditionArray);
-			console.log($allNoComplete);
 			// 7.2 排他操作
 			$(this).addClass("selected");
 			$(this).siblings().removeClass("selected");
